@@ -55,7 +55,7 @@
             ?>
             
                 <div class="col-xs-4" align="right">
-                    <img src="pics/kirby.gif" class="img-circle" style="width:100px;height:100px;">
+                    <img src="pics/kirby.gif" class="img-circle" style="width:30%;height:30%;">
                 </div>
                 
             <?php
@@ -80,9 +80,16 @@
                         <h4>I mean, thanks! I really appreciate it haha wow</h4></div>';
             ?>
                 <div class="col-xs-4">
-                    <img src="pics/kirby.gif" class="img-circle" style="width:100px;height:100px;">
+                    <img src="pics/kirby.gif" class="img-circle" style="width:30%;height:30%;">
                 </div>
                 
+            <?php if ($friendname !== "shy")
+                    echo '<div class="col-xs-12" style="height:20px;"></div>
+                        <div class="col-xs-12" align="center">
+                        <form action="tables.php">
+                        <button type="submit" class="btn btn-info">Tables</button>
+                        </form></div>'; ?>
+            
             <?php
             
             if ($friendname == "shy")
@@ -92,8 +99,6 @@
             
             ?>
             
-            <div class="col-xs-12" style="height:10px;"></div> <!-- Space -->   
-            
             <div class="col-xs-12">
                 
                 <h3>Enjoy some nice pics anyway</h3>
@@ -101,13 +106,13 @@
                 <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->   
                 
                 <div class="col-xs-4">
-                    <img src="pics/lights.png" class="img-rounded" style="width:350px;height:200px;">
+                    <img src="pics/lights.png" class="img-rounded" style="width:100%;height:100%;">
                 </div>
                 <div class="col-xs-4">
-                    <img src="pics/way.png" class="img-rounded" style="width:350px;height:200px;">
+                    <img src="pics/way.png" class="img-rounded" style="width:100%;height:100%;">
                 </div>
                 <div class="col-xs-4">
-                    <img src="pics/rain.gif" class="img-rounded" style="width:350px;height:200px;">
+                    <img src="pics/street.jpg" class="img-rounded" style="width:100%;height:100%;">
                 </div>
 
                 

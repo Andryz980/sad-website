@@ -1,8 +1,9 @@
 <?php
-
-    $friendname = $_GET['newfriend'];
-    if ($friendname == '')
-        $friendname = "Shy friend";
+    
+    if (isset($_GET['newfriend']))
+        $friendname = $_GET['newfriend'];
+    else
+        $friendname = $_COOKIE['vusername'];
     
     $cuser = setcookie("vusername", $friendname, time() + (10 * 365 * 24 * 60 * 60), "/");
 
@@ -32,9 +33,17 @@
             
             <div class="col-xs-12"><h2>Hi new friend, join the others</h2></div>
             
+            <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->  
+            
+            <div class="col-xs-12">
+            <form action="index.php">
+                <button type="submit" class="btn btn-info">Back</button>
+            </form>
+            </div>
+            
         </div>
         
-        <div class="col-xs-12" style="height:50px;"></div> <!-- Space -->
+        <div class="col-xs-12" style="height:30px;"></div> <!-- Space -->
         
         <div class="col-xs-2"></div>
         
@@ -66,6 +75,10 @@
                     <tr>
                         <th>Idk</th>
                         <th>I'm sad</th>
+                    </tr>
+                    <tr>
+                        <th>Claptrap</th>
+                        <th>Deejay</th>
                     </tr>
                     <tr>
                         <th>Yeah him</th>
