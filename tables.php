@@ -31,7 +31,7 @@
             
             <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->            
             
-            <div class="col-xs-12"><h2>Hi new friend, join the others</h2></div>
+            <div class="col-xs-12"><h1>Hi new friend, join the others</h1></div>
             
             <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->  
             
@@ -43,7 +43,7 @@
             
         </div>
         
-        <div class="col-xs-12" style="height:30px;"></div> <!-- Space -->
+        <div class="col-xs-12" style="height:10px;"></div> <!-- Space -->
         
         <div class="col-xs-2"></div>
         
@@ -65,7 +65,7 @@
                         <th>Haha</th>
                     </tr>
                     <tr>
-                        <th>You, <?php echo $friendname; ?></th>
+                        <th>You, <?php if ($friendname !== '') echo $friendname; else echo "shy friend"; ?></th>
                         <th>My new best friend</th>
                     </tr>
                     <tr>
