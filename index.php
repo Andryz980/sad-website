@@ -76,7 +76,7 @@
                 ';
             else
                 echo '<div class="col-xs-4" align="center">
-                        <h4>Wait... ' . $friendname . '? You came back despite this website being so awful..?</h4><br>
+                        <h4>Wait... ' . $friendname . '? You came back despite this website being so awful..?</h4>
                         <h4>I mean, thanks! I really appreciate it haha wow</h4></div>';
             ?>
                 <div class="col-xs-4">
@@ -86,7 +86,9 @@
             <?php
             
             if ($friendname == "shy")
-                echo '</form>'; 
+                echo '</form>';
+            else
+                echo '<div class="col-xs-12" style="height:50px;"></div>';
             
             ?>
             
