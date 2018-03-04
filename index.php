@@ -51,7 +51,7 @@
             
             <form method="get" action="tables.php">';
             else
-                echo '';
+                echo '<div class="col-xs-12" style="height:30px;"></div>';
             ?>
             
                 <div class="col-xs-4" align="right">
