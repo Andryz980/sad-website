@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "vcr";
+    src: url(fonts/vcr/VCR_OSD_MONO.ttf);
+}
+
+@font-face {
+    font-family: "dpcomic";
+    src: url(fonts/dpcomic/dpcomic.ttf);
+}
+
+@font-face {
+    font-family: "lunch";
+    src: url(fonts/lunchtime/lunchds.ttf);
+}
+
+@font-face {
+    font-family: "manaspace";
+    src: url(fonts/manaspace/manaspc.ttf);
+}
+
+div {
+    font-family: "vcr";
+}

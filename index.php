@@ -25,16 +25,21 @@
         <!-- Implementato correttamente Bootstrap -->
 
         <link rel="icon" href="pics/vicon.png">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
     </head>
 
     <body style="background-color:#c7b3ff"> <!-- edit -->
-        
+             
         <div class="container">
             
             <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->            
             
-            <div class="col-xs-12">
+            <div class="col-xs-8">
                 <h1>Welcome to a sad website 🌈</h1>
+            </div>
+            
+            <div class="col-xs-4" align="right">
+                <h1>お元気ですか?</h1>
             </div>
             
             <?php

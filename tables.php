@@ -23,6 +23,7 @@
         <!-- Implementato correttamente Bootstrap -->
 
         <link rel="icon" href="pics/vicon.png">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
     </head>
 
     <body style="background-color:#c7b3ff"> <!-- edit -->
@@ -35,86 +36,99 @@
             
             <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->  
             
-            <div class="col-xs-12">
+            <div class="col-xs-6">
+                
             <form action="index.php">
                 <button type="submit" class="btn btn-info">Back</button>
             </form>
+                
             </div>
             
-        </div>
+            <div class="col-xs-6" align="right">
+                
+            <form action="chat.php">
+                <button type="submit" id="cb" style="visibility: hidden" class="btn btn-info">Chat</button>
+            </form>
+                
+            </div>
         
-        <div class="col-xs-12" style="height:10px;"></div> <!-- Space -->
-        
-        <div class="col-xs-2"></div>
-        
-        <div class="col-xs-8">
-        
-            <table class="table table-hover">
+            <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->
 
-                <thead>
+            <div class="col-xs-12">
 
-                    <tr>
-                        <th>Name</th>
-                        <th>Role</th>
-                    </tr>
+                <table class="table table-hover">
 
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Me</th>
-                        <th>Haha</th>
-                    </tr>
-                    <tr>
-                        <th>You, <?php if ($friendname !== '') echo $friendname; else echo "shy friend"; ?></th>
-                        <th>My new best friend</th>
-                    </tr>
-                    <tr>
-                        <th>Cucciola2.0</th>
-                        <th>Bae</th>
-                    </tr>
-                    <tr>
-                        <th>Idk</th>
-                        <th>I'm sad</th>
-                    </tr>
-                    <tr>
-                        <th>Claptrap</th>
-                        <th>Deejay</th>
-                    </tr>
-                    <tr>
-                        <th>Yeah him</th>
-                        <th>lol</th>
-                    </tr>
-                </tbody>
+                    <thead>
 
-            </table>
-            
-        </div>
-            
-        <div class="col-xs-12" style="height:30px;"></div> <!-- Space -->
-            
-            
-        <div class="col-xs-2"></div>
-        
-        <div class="col-xs-8"align="center">
-            <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" style="width:10%">
-                    Friends
-                </div>
-                <div class="progress-bar progress-bar-info" role="progressbar" style="width:20%">
-                    Special friends
-                </div>
-                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:60%">
-                    Social anxiety
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Me</th>
+                            <th>Haha</th>
+                        </tr>
+                        <tr>
+                            <th>You, <?php if ($friendname !== '') echo $friendname; else echo "shy friend"; ?></th>
+                            <th>My new best friend</th>
+                        </tr>
+                        <tr>
+                            <th>Cucciola2.0</th>
+                            <th>Bae</th>
+                        </tr>
+                        <tr>
+                            <th>Idk</th>
+                            <th>I'm sad</th>
+                        </tr>
+                        <tr>
+                            <th>Claptrap</th>
+                            <th>Deejay</th>
+                        </tr>
+                        <tr>
+                            <th>Yeah him</th>
+                            <th>lol</th>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="col-xs-12" style="height:30px;"></div> <!-- Space -->
+
+            <div class="col-xs-12"align="center">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-success" role="progressbar" style="width:10%">
+                        Friends
+                    </div>
+                    <div class="progress-bar progress-bar-info" role="progressbar" style="width:20%">
+                        Special friends
+                    </div>
+                    <div class="progress-bar progress-bar-danger" role="progressbar" style="width:60%">
+                        Social anxiety
+                    </div>
                 </div>
             </div>
+            
+            <script>
+                
+                function showChatButton()
+                {
+                    var b = document.getElementById('cb');
+                    b.style.visibility = 'visible';
+                }
+                
+            </script>
+
+            <div class="col-xs-12" style="height:30px;"></div> <!-- Space -->
+
+            <div class="col-xs-12" align="center">
+                <button type="button" class="btn btn-info" name="wow" onclick="alert('Thanks I hope you\'re happy'); showChatButton()">Wow very nice table good job I like it</button>
+            </div>
         </div>
-        
-        <div class="col-xs-12" style="height:30px;"></div> <!-- Space -->
-        
-        <div class="col-xs-12" align="center">
-            <button type="button" class="btn btn-info" name="wow" onclick="alert('Thanks I hope you\'re happy')">Wow very nice table good job I like it</button>
-        </div>
-        
     </body>
     
 </html>
