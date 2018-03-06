@@ -29,7 +29,7 @@
             <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->            
             
             <div class="col-xs-10">
-                <h1>Welcome to a sad chat for nice people 🌈</h1>
+                <h1>Welcome to a nice chat for nice people! ^^</h1>
             </div>
             
             <div class="col-xs-2" align="right">
@@ -44,7 +44,9 @@
             
             <div class="col-xs-12" style="height:40px;"></div> <!-- Space -->
             
-            <div class="col-xs-8">
+            <div class="col-xs-12"><label>You can write here, don't worry about the other people they are cool too</label></div>
+            
+            <div class="col-xs-9">
                 
                 <form>
                     
@@ -54,9 +56,9 @@
                 
             </div>
             
-            <div class="col-xs-4" align="right">
+            <div class="col-xs-3" align="right">
             
-                <form action="$_SERVER['PHP_SELF']" method="post">
+                <form action="wip.php" method="post">
                     
                     <button type="submit" class="btn btn-info">Send</button>
                     <!-- database -->
@@ -70,9 +72,10 @@
             <div class="col-xs-12">
 
                 <table class="table table-striped">
-
+                    <col width="30%">
+                    <col width="70%">
                     <thead>
-
+                        
                         <tr>
                             <th>User</th>
                             <th>Message</th>
@@ -83,8 +86,8 @@
                     <tbody>
                         <?php
                             $i = 0;
-                            $users = array("Andy","Cucciola2.0","Andy");
-                            $messages = array("Hey","sup","Love you");
+                            $users = array("Andy","Sweetie","Wiz");
+                            $messages = array("Hey","Sup","Yo guys");
                             
                             for ($i = 0; $i < count($messages); $i++)
                                 echo "<tr><th>$users[$i]</th><th>$messages[$i]</th></tr>";
