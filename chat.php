@@ -58,7 +58,7 @@
             
             <div class="col-xs-3" align="right">
             
-                <form action="wip.php" method="post">
+                <form action="wip.php" method="get">
                     
                     <button type="submit" class="btn btn-info">Send</button>
                     <!-- database -->
