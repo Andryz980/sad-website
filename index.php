@@ -54,7 +54,7 @@
             
             <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->            
             
-            <form method="get" action="tables.php">';
+            <form method="post" action="tables.php">';
             else
                 echo '<div class="col-xs-12" style="height:30px;"></div>';
             ?>

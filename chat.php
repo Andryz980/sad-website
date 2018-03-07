@@ -34,9 +34,9 @@
             
             <div class="col-xs-2" align="right">
                 
+                <!-- BACK BUTTON -->
                 <form action="tables.php" method="get">                    
-                    <input type="text" class="form-control" name="newfriend" style="visibility: hidden" value="<?php echo $friendname; ?>">
-                    
+                    <input type="text" class="form-control" name="newfriend" style="visibility: hidden; height:24px" value="<?php echo $friendname; ?>">
                     <button type="submit" class="btn btn-info">Back</button>
                 </form>
                 
@@ -96,6 +96,14 @@
 
                 </table>
 
+            </div>
+
+            <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->
+            
+            <div class="col-xs-12" align="center">
+                <a href="jukebox.php" target="_blank">
+                    <img src="pics/boombox.gif">
+                </a>
             </div>
             
         </div>

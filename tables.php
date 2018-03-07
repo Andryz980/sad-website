@@ -32,23 +32,27 @@
             
             <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->            
             
-            <div class="col-xs-12"><h1>Hi new friend, join the others</h1></div>
+            <div class="col-xs-10"><h1>Hi new friend, join the others</h1></div>
             
-            <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->  
-            
-            <div class="col-xs-6">
+            <div class="col-xs-2" align="right">
                 
-            <form action="index.php">
-                <button type="submit" class="btn btn-info">Back</button>
-            </form>
+                <!-- BACK BUTTON -->
+                <form action="index.php">
+                    <input type="text" class="form-control" style="visibility: hidden; height:24px">
+                    <button type="submit" class="btn btn-info">Back</button>
+                </form>
                 
             </div>
             
+            <div class="col-xs-12" style="height:20px;"></div> <!-- Space -->  
+            
+            <div class="col-xs-6"></div>
+            
             <div class="col-xs-6" align="right">
                 
-            <form action="chat.php">
-                <button type="submit" id="cb" style="visibility: hidden" class="btn btn-info">Chat</button>
-            </form>
+                <form action="chat.php">
+                    <button type="submit" id="cb" style="visibility: hidden" class="btn btn-info">Chat</button>
+                </form>
                 
             </div>
         
