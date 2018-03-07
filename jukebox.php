@@ -41,9 +41,9 @@
             <div class="col-xs-2" align="right">
                 
                 <!-- BACK BUTTON -->
-                <form action="chat.php">
+                <form>
                     <input type="text" class="form-control" style="visibility: hidden; height:24px">
-                    <button type="submit" class="btn btn-info">Back</button>
+                    <button type="submit" onclick="window.close();" class="btn btn-info">Close</button>
                 </form>
                 
             </div>
