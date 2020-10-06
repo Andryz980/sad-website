@@ -80,10 +80,6 @@
                             <th>My new best friend</th>
                         </tr>
                         <tr>
-                            <th>Cucciola2.0</th>
-                            <th>Bae</th>
-                        </tr>
-                        <tr>
                             <th>Idk</th>
                             <th>I'm sad</th>
                         </tr>
